@@ -1,0 +1,238 @@
+
+:root {
+    /*============ COLORS ============*/
+    --primary-color: #4d37b3;
+    --secondary-color : #f9d9c2;
+    --body-color : #f5f9fc;
+    --title-font-color : #fff;
+
+    /*============ FONTS ============*/
+    --extra-large-font-size : 2.5rem;
+    --title-font-size : 2rem;
+    --h1-font-size : 2rem;
+    --h2-font-size : 1.5rem;
+    --h3-font-size : 1.3rem;
+    --normal-font-size : 1rem;
+    --small-font-size : .75rem;
+    --body-font : 'Poppins', 'sans-serif';
+  }
+
+/*===================== DEFAULTS =====================*/
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+h2 {
+    font-size: var(--h2-font-size);
+}
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+span {
+    font-size: var(--normal-font-size);
+}
+
+i {
+    color: var(--secondary-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+section {
+    display: flex;
+    margin-top: 1rem ;
+}
+
+.section__title {
+    text-transform: capitalize;
+    color: var(--title-font-color);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+/*===================== END DEFAULTS =====================*/
+
+/*===================== COMMON =====================*/
+
+.rounded-image {
+    border-radius: 1rem;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.content {
+    min-height: 100vh;
+    background-color: var(--body-color);
+}
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*===================== END COMMON =====================*/
+
+
+
+
+
+
+
+
+/*===================== MOBILE =====================*/
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+/*===================== HEADER SECTION =====================*/
+    .header {
+        padding: 4rem 2rem;
+        background-color: var(--primary-color);
+        margin: 0;
+        position: relative;
+        height: 50vh;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .section__title {
+        font-size: var(--title-font-size);
+    }
+    .header__intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__title {
+        font-size: var(--extra-large-font-size);
+        line-height: 1.5;
+    }
+
+    .header__profile-image {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .task__item {
+        background-color: white;
+        padding: 2rem;
+        border-radius: .5rem;
+        margin: 2rem 0;
+        text-transform: capitalize;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .task_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1rem;        
+        border-radius: .5rem;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .task__list {
+        margin-top: 3rem;
+    }
+
+    .task__image {
+        width: 6rem;
+    }
+    .task__lable {
+        width: 4rem;
+    }
+
+    .task__title {
+        font-size: var(--h1-font-size);
+    }
+
+    .task__date-icon {
+        color: var(--secondary-color);
+    }
+
+    .task__date {
+        display: flex;
+        align-items: center;
+    }
+    .task__details {
+        padding-top: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .task__list-title {
+        color: var(--title-font-color);
+        justify-content: space-between;
+    }
+
+    .header__content {
+        height: 100vh;
+        
+    }
+/*===================== END HEADER SECTION =====================*/
+
+      
+/*===================== FOOTER SECTION =====================*/
+    .footer {
+        height: 6rem;
+        margin-top: -6rem;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__icon {
+        font-size: var(--normal-font-size);
+        color: black ;
+        padding: 1rem;
+    }
+
+    .footer__menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+    .footer__add-icon {
+        padding: 1rem;
+        font-size: 50px;
+        background-color: #0088ff;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+/*===================== END FOOTER SECTION =====================*/
+
+
+}
+  
